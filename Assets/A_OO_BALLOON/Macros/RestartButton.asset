@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: RestartButton
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-197.0,"y":0.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-321.0,"y":-46.0},"guid":"ace00695-d223-495d-bafe-d1dfb1b36d8d","$version":"A","$type":"Bolt.OnButtonClick","$id":"9"},{"chainable":false,"member":{"name":"LoadScene","parameterTypes":["System.String"],"targetType":"UnityEngine.SceneManagement.SceneManager","targetTypeName":"UnityEngine.SceneManagement.SceneManager","$version":"A"},"defaultValues":{"%sceneName":{"$content":"","$type":"System.String"}},"position":{"x":45.0,"y":-45.0},"guid":"96c7e44e-5b8d-44fc-8c49-7d6bfeeef344","$version":"A","$type":"Bolt.InvokeMember","$id":"11"},{"member":{"name":"name","parameterTypes":null,"targetType":"UnityEngine.SceneManagement.Scene","targetTypeName":"UnityEngine.SceneManagement.Scene","$version":"A"},"defaultValues":{},"position":{"x":-128.0,"y":64.0},"guid":"0f6aea79-e4b7-4ad6-b953-5e2795cedff7","$version":"A","$type":"Bolt.GetMember","$id":"14"},{"chainable":false,"member":{"name":"GetActiveScene","parameterTypes":[],"targetType":"UnityEngine.SceneManagement.SceneManager","targetTypeName":"UnityEngine.SceneManagement.SceneManager","$version":"A"},"defaultValues":{},"position":{"x":-363.0,"y":66.0},"guid":"040fd954-8c9b-4351-9fae-5a782a7a0e62","$version":"A","$type":"Bolt.InvokeMember","$id":"17"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"11"},"destinationKey":"enter","guid":"0013a492-7f35-4da6-8af4-eb1e8292e9a6","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"value","destinationUnit":{"$ref":"11"},"destinationKey":"%sceneName","guid":"d33b72e1-906e-4150-8e57-2514ab306a85","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"result","destinationUnit":{"$ref":"14"},"destinationKey":"target","guid":"c3d549ca-fe33-41ef-b9e9-1ee8e1a83382","$type":"Bolt.ValueConnection"},{"position":{"xMin":-416.0,"yMin":-112.0,"xMax":236.0,"yMax":209.0},"label":"Reload
+      the current scene","comment":null,"color":{"r":0.0,"g":0.0,"b":0.0,"a":1.0},"guid":"711b5063-27c1-4cbd-9120-551bf72d6d7e","$version":"A","$type":"Ludiq.GraphGroup"}],"$version":"A"}}'
+    _objectReferences: []

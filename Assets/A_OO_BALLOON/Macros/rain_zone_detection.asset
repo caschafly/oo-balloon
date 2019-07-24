@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: rain_zone_detection
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":624.5001,"y":108.0001},"zoom":0.4999999,"elements":[{"kind":"Object","defaultValues":{"name":{"$content":"In
+      Rain","$type":"System.String"},"object":null},"position":{"x":881.0,"y":-216.0},"guid":"76707bc6-9f70-435c-9571-200236c921cf","$version":"A","$type":"Bolt.SetVariable","$id":"9"},{"kind":"Object","defaultValues":{"name":{"$content":"In
+      Rain","$type":"System.String"},"object":null},"position":{"x":879.0,"y":4.0},"guid":"6b2f1148-9d39-4c1d-b478-03ba0ff3c636","$version":"A","$type":"Bolt.SetVariable","$id":"11"},{"type":"System.Boolean","value":{"$content":true,"$type":"System.Boolean"},"defaultValues":{},"position":{"x":708.0,"y":-86.0},"guid":"10b38c0e-4a76-439e-80b1-ec9cab540aaf","$version":"A","$type":"Bolt.Literal","$id":"13"},{"nest":{"source":"Macro","macro":0,"embed":null},"defaultValues":{"collide
+      tag":{"$content":"weather_Rain","$type":"System.String"}},"position":{"x":146.0,"y":-201.0},"guid":"136107bc-2358-4216-93f6-7f6318a027ff","$version":"A","$type":"Bolt.SuperUnit","$id":"15"},{"type":"System.Boolean","value":{"$content":false,"$type":"System.Boolean"},"defaultValues":{},"position":{"x":707.0,"y":124.0},"guid":"364835c4-310d-453b-9598-f9920d10462a","$version":"A","$type":"Bolt.Literal","$id":"18"},{"sourceUnit":{"$ref":"15"},"sourceKey":"correct","destinationUnit":{"$ref":"9"},"destinationKey":"assign","guid":"b84c7a1c-9a17-4162-958f-5714756a0fa2","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"wrong","destinationUnit":{"$ref":"11"},"destinationKey":"assign","guid":"e0035ccc-85f0-4e9d-8a76-21f4a4ce2c86","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"output","destinationUnit":{"$ref":"11"},"destinationKey":"input","guid":"512b8788-2c6d-4001-8e0b-2239f84c51e0","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"output","destinationUnit":{"$ref":"9"},"destinationKey":"input","guid":"ddb969bc-041e-4743-b4b7-1782a037026d","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"collide
+      game object","destinationUnit":{"$ref":"9"},"destinationKey":"object","guid":"a20ef7a8-9098-4d80-92c5-f7f5ff974747","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"collide
+      game object","destinationUnit":{"$ref":"11"},"destinationKey":"object","guid":"f87e0f35-e326-47c1-ac1e-4a7ec966405c","$type":"Bolt.ValueConnection"},{"position":{"xMin":91.0,"yMin":-251.0,"xMax":1083.0,"yMax":233.0},"label":"In
+      rain?","comment":null,"color":{"r":0.0,"g":0.0,"b":0.0,"a":1.0},"guid":"9d499d04-55d6-4b2a-9a2e-acd8e308dc01","$version":"A","$type":"Ludiq.GraphGroup"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 30a08a735d6c64cb9adbbb0b612c3b7a, type: 2}

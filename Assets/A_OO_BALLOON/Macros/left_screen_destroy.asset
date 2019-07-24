@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: left_screen_destroy
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-142.2656,"y":-219.7321},"zoom":0.95,"elements":[{"defaultValues":{"duration":{"$content":0.2,"$type":"System.Single"},"unscaledTime":{"$content":false,"$type":"System.Boolean"}},"position":{"x":-99.0,"y":-425.0},"guid":"024c0d1b-71f1-4bc9-84c3-d2ead09705d3","$version":"A","$type":"Bolt.Timer","$id":"9"},{"chainable":false,"member":{"name":"Destroy","parameterTypes":["UnityEngine.Object"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%obj":null},"position":{"x":269.0,"y":-292.0},"guid":"bfa67557-b686-422d-a994-0e0a7078acf8","$version":"A","$type":"Bolt.InvokeMember","$id":"11"},{"nest":{"source":"Macro","macro":0,"embed":null},"defaultValues":{"collide
+      tag":{"$content":"left_screen","$type":"System.String"}},"position":{"x":-602.0,"y":-426.0},"guid":"847ae952-6b9c-4929-8b95-8dba8369e312","$version":"A","$type":"Bolt.SuperUnit","$id":"14"},{"defaultValues":{},"position":{"x":107.0,"y":-177.0},"guid":"d149bbc8-e220-44e5-831e-c8f2f76068e3","$version":"A","$type":"Bolt.Self","$id":"17"},{"sourceUnit":{"$ref":"9"},"sourceKey":"completed","destinationUnit":{"$ref":"11"},"destinationKey":"enter","guid":"f1622335-8dcc-440b-9f3a-dea4dde97953","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"correct","destinationUnit":{"$ref":"9"},"destinationKey":"start","guid":"c5c47fa2-a0c5-4a07-885c-585328de9246","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"self","destinationUnit":{"$ref":"11"},"destinationKey":"%obj","guid":"b03d9878-bae1-4050-a602-d43d70b086bc","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 30a08a735d6c64cb9adbbb0b612c3b7a, type: 2}

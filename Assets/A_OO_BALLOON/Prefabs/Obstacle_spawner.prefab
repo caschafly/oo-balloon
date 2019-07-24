@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1440662658200084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4498978410270440}
+  - component: {fileID: 114586099266065150}
+  - component: {fileID: 114769289226349230}
+  m_Layer: 0
+  m_Name: Obstacle_spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4498978410270440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440662658200084}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114586099266065150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440662658200084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"collection":{"$content":[{"name":"SpawnRate","value":{"$content":8.0,"$type":"System.Single"},"$version":"A"},{"name":"ObstaclePrefab_rocket","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"SpawnX","value":{"$content":30.0,"$type":"System.Single"},"$version":"A"},{"name":"SpawnMinY","value":{"$content":-3.3,"$type":"System.Single"},"$version":"A"},{"name":"SpawnMaxY","value":{"$content":3.3,"$type":"System.Single"},"$version":"A"},{"name":"Prefab_weather_top_raincloud","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"Prefab_Obstacle_ground_spike","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"Prefab_obstacle_basic_01","value":{"$content":3,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 1479085817158668, guid: 9244484070a81448283dca7ed4e8c91d, type: 3}
+    - {fileID: 1481146278969190, guid: 1fcefc1d3da722c48bce53d3662a8fb9, type: 3}
+    - {fileID: 3455752831587362399, guid: ba0000e4bfb79174ab21c16d757647be, type: 3}
+    - {fileID: 1377912788241390, guid: 38576b27a472d4e908897c61a03397d2, type: 3}
+--- !u!114 &114769289226349230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440662658200084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: d75e13a12de5f451ea362c1c177038aa, type: 2}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: on_collide_with
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[{"key":"correct","label":null,"summary":null,"hideLabel":false},{"key":"wrong","label":null,"summary":null,"hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":{"$content":"Player","$type":"System.String"},"_type":"System.String","key":"collide
+      tag","label":null,"summary":"hit with?","hideLabel":false}],"valueOutputDefinitions":[{"_type":"UnityEngine.GameObject","key":"collide
+      game object","label":null,"summary":null,"hideLabel":false}],"title":null,"summary":null,"pan":{"x":97.23502,"y":-58.52939},"zoom":0.85,"elements":[{"defaultValues":{},"position":{"x":173.0,"y":-141.0},"guid":"d453db0a-12af-4095-8c9d-255189d75617","$version":"A","$type":"Bolt.Branch","$id":"13"},{"chainable":false,"member":{"name":"CompareTag","parameterTypes":["System.String"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"target":null,"%tag":{"$content":"Player","$type":"System.String"}},"position":{"x":-28.0,"y":21.0},"guid":"bbb1f65e-7834-4e2c-9815-58c0c12455bd","$version":"A","$type":"Bolt.InvokeMember","$id":"15"},{"defaultValues":{},"position":{"x":-233.0,"y":57.0},"guid":"cc57f55f-1f54-46c2-94c9-07a9d8e2298e","$version":"A","$type":"Bolt.GraphInput","$id":"18"},{"defaultValues":{},"position":{"x":357.0,"y":-77.0},"guid":"bec4f5fb-9e5e-4e4f-89b9-9f5ad46c9e19","$version":"A","$type":"Bolt.GraphOutput","$id":"20"},{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-342.0,"y":-181.0},"guid":"b800c763-0675-41ef-84b9-b26a3c8cda73","$version":"A","$type":"Bolt.OnCollisionEnter2D","$id":"22"},{"sourceUnit":{"$ref":"22"},"sourceKey":"trigger","destinationUnit":{"$ref":"13"},"destinationKey":"enter","guid":"b8eee928-a063-48f5-a546-9ba94288daf4","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"20"},"destinationKey":"correct","guid":"f7bd2c29-9f22-4805-b25f-15dc31b9b8e4","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"ifFalse","destinationUnit":{"$ref":"20"},"destinationKey":"wrong","guid":"c20376f4-2ac5-4909-baef-327b633663d6","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"collide
+      tag","destinationUnit":{"$ref":"15"},"destinationKey":"%tag","guid":"2bcb77ce-092b-4098-b2b1-3f0bd2efdadc","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"collider","destinationUnit":{"$ref":"20"},"destinationKey":"collide
+      game object","guid":"f8fefb81-7475-4836-9feb-4add222a0efb","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"result","destinationUnit":{"$ref":"13"},"destinationKey":"condition","guid":"6b7d977b-f34e-42b5-96bf-33419401a67a","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"collider","destinationUnit":{"$ref":"15"},"destinationKey":"target","guid":"269251ba-114b-4506-8d4d-e2020f2ad2f4","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

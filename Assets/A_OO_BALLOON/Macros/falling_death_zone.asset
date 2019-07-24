@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: falling_death_zone
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-591.7203,"y":-637.3596},"zoom":0.8499999,"elements":[{"chainable":false,"member":{"name":"PlayOneShot","parameterTypes":["UnityEngine.AudioClip"],"targetType":"UnityEngine.AudioSource","targetTypeName":"UnityEngine.AudioSource","$version":"A"},"defaultValues":{"target":null,"%clip":{"$content":0,"$type":"UnityEngine.Object"}},"position":{"x":-353.0,"y":-697.0},"guid":"68483be0-64ad-4c57-b3eb-b3fe682acdbf","$version":"A","$type":"Bolt.InvokeMember","$id":"9"},{"chainable":false,"member":{"name":"FindWithTag","parameterTypes":["System.String"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%tag":{"$content":"Player","$type":"System.String"}},"position":{"x":-590.0,"y":-539.0},"guid":"2d1d3ce9-5a90-4e7e-8c21-294d7955ca47","$version":"A","$type":"Bolt.InvokeMember","$id":"12"},{"argumentCount":1,"defaultValues":{"name":{"$content":"oo_hurt","$type":"System.String"},"target":null},"position":{"x":-594.0,"y":-741.0},"guid":"20f53b93-892a-47d0-b1fa-690365f98244","$version":"A","$type":"Bolt.TriggerCustomEvent","$id":"15"},{"nest":{"source":"Macro","macro":1,"embed":null},"defaultValues":{"collide
+      tag":{"$content":"Player","$type":"System.String"}},"position":{"x":-1023.0,"y":-796.0},"guid":"f27ee33c-f359-4fc6-859f-33702549c4ff","$version":"A","$type":"Bolt.SuperUnit","$id":"17"},{"type":"System.Int32","value":{"$content":1000,"$type":"System.Int32"},"defaultValues":{},"position":{"x":-847.0,"y":-555.0},"guid":"8e788d2b-2c18-4b07-94d4-e465df2cc5b0","$version":"A","$type":"Bolt.Literal","$id":"20"},{"sourceUnit":{"$ref":"15"},"sourceKey":"exit","destinationUnit":{"$ref":"9"},"destinationKey":"enter","guid":"22907937-d9f0-4f84-817f-bc485c21c2d3","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"correct","destinationUnit":{"$ref":"15"},"destinationKey":"enter","guid":"2ed7b88b-cbe0-4214-8ca6-58a0ea6642c1","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"result","destinationUnit":{"$ref":"9"},"destinationKey":"target","guid":"6fff0a10-0421-48b3-a40e-be7a9a0e40e2","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"collide
+      game object","destinationUnit":{"$ref":"15"},"destinationKey":"target","guid":"43b1d729-4b4b-4c9c-8f5b-e40bc2d8a464","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"output","destinationUnit":{"$ref":"15"},"destinationKey":"argument_0","guid":"3afda6a3-a422-4cf6-86d6-cad9b9742262","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 8300000, guid: 8f259a2c27b1d4df8adf5bd9a2d8e3e3, type: 3}
+    - {fileID: 11400000, guid: 988edb22ff93441d290cff6704670063, type: 2}
